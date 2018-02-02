@@ -1,0 +1,41 @@
+.notebooks{
+	display: table;
+	.notebook-container{
+		height: 275px;
+	  @include breakpoint(lg) {
+	      height: 227px;
+	  }
+	  @include breakpoint(md) {
+	      height: 172px;
+	  }
+	  @include breakpoint(sm) {
+		      height:264px;
+		}
+		display: table-cell;
+		img{
+			@include transition-duration(.3s);
+			&:hover{
+				curor:pointer;
+				margin-top:-5px;
+				@include breakpoint(sm) {
+					margin-top:0;
+				}
+			}
+		}
+		img.notebook{
+			width:225px;
+		  @include breakpoint(lg) {
+		      width:185px;
+		  }
+		  @include breakpoint(md) {
+		      width:140px;
+		  }
+		  @include breakpoint(sm) {
+		      width:100%;
+		  }
+		}
+	}
+}
+
+
+

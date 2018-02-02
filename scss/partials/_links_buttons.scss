@@ -1,0 +1,17 @@
+.btn{
+	&.btn-primary{
+		background-color:$dark-gray-color;
+		border-color:$dark-gray-color;
+		&:hover{
+			background-color:shade($dark-gray-color,10%);
+		}
+	}
+	&.btn-default{
+		background-color:$gray-color;
+		border-color:$gray-color;
+		color:white;
+		&:hover{
+			background-color:shade($gray-color,10%);
+		}
+	}
+}

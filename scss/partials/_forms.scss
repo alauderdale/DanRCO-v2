@@ -1,0 +1,10 @@
+.form-control{
+	box-shadow:none;
+	&:focus{
+		box-shadow:none;
+	}
+}
+
+.form-control:focus{
+	border-color:$secondary-color;
+}

@@ -1,0 +1,13 @@
+.global-footer{
+	background:$extra-dark-gray-color;
+	p{
+		color:white;
+		margin-bottom:0;
+	}
+	a{
+		color:white;
+	}
+	section{
+		padding:$baseline/2 0;
+	}
+}

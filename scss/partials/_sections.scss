@@ -1,0 +1,96 @@
+//sections
+section{
+  padding:$baseline 0;
+  // &:first-of-type{
+  // 	margin-top:-100px;
+  // }
+  &.inverse-section{
+  	@extend %white_text;
+    background-color:$gray-color;
+  }
+  .parallax-inner{
+
+  }
+  &.dan-hero{
+  	padding:$baseline*8 0;
+  	background-color: transparent;
+  	background-repeat:no-repeat;
+  	background-position-x:center;
+  	background-position-y:top;
+  	background-size:cover;
+    position:relative;
+    overflow:hidden;
+    background:$dark-gray-color;
+    width:100%;
+    top:-95px;
+    margin-bottom:-95px;
+	  @include breakpoint(md) {
+	  	background-position-x:-270px!important;
+  	}
+  	@include breakpoint(sm) {
+  		// background-image: url(../images/dan-dark.png)!important;
+
+    &:before{
+        background:rgba(0,0,0,.5);
+        position:absolute;
+        content:"";
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        text-align: center;
+      }
+
+  		h4{
+	  		color:white;
+  		}
+  	}
+  }
+  &.narratives-hero{
+    background-color: $light-gray-color;
+    background-color: transparent;
+    background-repeat:no-repeat;
+    background-position-x:center;
+    background-position-y:top;
+    background-size:cover;
+    position:relative;
+  }
+  &.bio{
+    background-color: $medium-gray-color;
+  }
+  &.surf{
+    background-color:$dark-gray-color;
+    @include breakpoint(sm) {
+      background-position-x:-600px!important;
+    }
+
+  }
+  &.ski{
+    background-color:$dark-gray-color;
+    @include breakpoint(sm) {
+      background-position-x:-900px!important;
+      background-position-y:bottom!important;
+    }
+  }
+  &.contact{
+     background-color: $dark-gray-color;
+  }
+}
+
+
+.parallax-default {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; 
+  min-height:600px!important;
+}
+

@@ -1,0 +1,169 @@
+// typography baselines and @font face setups
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+
+@font-face {
+    font-family: 'socialicoregular';
+    src: url('../font/socialico-webfont.eot');
+    src: url('../font/socialico-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/socialico-webfont.woff') format('woff'),
+         url('../font/socialico-webfont.ttf') format('truetype'),
+         url('../font/socialico-webfont.svg#socialicoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.text-columns-2{
+  @include columns($text-column-gutter-width 2);
+}
+.text-columns-3{
+  @include columns($text-column-gutter-width 3);
+  @include breakpoint(md) {
+    @include columns($text-column-gutter-width 2);
+  }
+  @include breakpoint(sm) {
+    @include columns($text-column-gutter-width 1);
+  }
+}
+.text-columns-4{
+  @include columns($text-column-gutter-width 4);
+}
+
+.text-uppercase{
+  text-transform:uppercase;
+}
+
+.text-color{
+  color:$text-color;
+}
+
+.dark-text-color{
+  color:$dark-text-color;
+}
+
+.light-text-color{
+  color:$light-text-color;
+}
+
+.text-success{
+  color:$green-color;
+}
+
+.text-warning{
+  color:$warning-color;
+}
+
+.link-color{
+  color:$link-color;
+}
+
+
+//font families
+
+.light-font-name{
+    font-family:$regular-font-name;
+    font-weight:100;
+}
+.regular-font-name{
+    font-family:$regular-font-name;
+}
+.medium-font-name{
+    font-family:$regular-font-name;
+}
+.bold-font-name{
+    font-family:$regular-font-name;
+}
+.extra-bold-font-name{
+    font-family:$regular-font-name;
+}
+
+.social-font-name{
+    font-family:$social-font-name;
+}
+
+
+
+
+//font color
+
+.primary-text-color{
+  color:$primary-color!important;
+  p{
+    color:$primary-color!important;
+  }
+}
+
+.secondary-text-color{
+  color:$secondary-color!important;
+  p{
+    color:$secondary-color!important;
+  }
+}
+
+
+//font base
+
+
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { 
+  font-weight: inherit; 
+}
+h1, h2, h3, h4, h5, h6, p {
+  margin:0;
+  margin-bottom:$baseline/2; 
+}
+
+
+h1 { 
+  font-size: 4.7rem; 
+  margin-bottom:$baseline;
+}
+h2 { 
+  font-size: 3rem; 
+  margin-bottom:1.5rem;
+  line-height: 4.5rem;
+}
+h3 { 
+  font-size: 2.7rem; 
+  font-family: $light-font-name;
+}
+h4 { 
+  font-size: 2rem; 
+  line-height: 2.8rem;
+}
+h5 { 
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+h6 { 
+  font-size: 1.2rem;  
+}
+
+
+p{
+  line-height:2.2rem;
+  margin-bottom:$baseline/2;
+  letter-spacing:.5px;
+  &.lead{
+    line-height:1.7rem;
+  }
+  .text-underline{
+    padding-bottom:4px;
+  }
+}
+
+ul{
+  margin-left:20px;
+  li{
+    line-height:2.2rem;
+    letter-spacing:1px;
+  }
+}
+
+
+
+
+
+
+

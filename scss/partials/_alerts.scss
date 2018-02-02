@@ -1,0 +1,20 @@
+div.wpcf7-mail-sent-ok{
+	border:none;
+	padding: 15px;
+	margin: 0;
+	margin-bottom: 20px;
+	@extend .alert;
+	@extend .alert-success;
+	padding:20px;
+}
+
+
+div.wpcf7-validation-errors{
+	border:none;
+	padding: 15px;
+	margin: 0;
+	margin-bottom: 20px;
+	@extend .alert;
+	@extend .alert-warning;
+	padding:20px;	
+}

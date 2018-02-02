@@ -1,0 +1,51 @@
+// color vars
+
+$primary-color: #c9c7c1;
+$secondary-color: #f46f02;
+$tertiary-color: #2f7bbd;
+$medium-gray-color: #d8d9d9;
+$light-gray-color: #eff0f0;
+$dark-gray-color:#484e4e;
+$extra-dark-gray-color:#303636;
+
+$gray-color:#939393;
+$green-color: #85C342;
+$black-color:#1f2229;
+$yellow-color:#ffd266;
+
+$success-color:$green-color;
+$warning-color:#f0ad4e;
+
+
+$text-color: #484e4e;
+$light-text-color: #bbbbbb;
+$body-text-color: $text-color;
+$dark-text-color: $text-color;
+
+
+$link-color: $secondary-color;
+$link-hover-color:shade($secondary-color,50%);
+$top-nav-link-color:tint($text-color,30%);
+
+$background-color: #fff;
+
+// units
+
+$baseline: 28px;
+$base-border-radius:3px;
+
+
+// font vars
+
+
+$regular-font-name: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$light-font-name: "HelveticaNeue-thin", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$social-font-name: 'socialicoregular';
+
+//transitions
+
+$base-transition-duration:.2s;
+
+//text columns
+
+$text-column-gutter-width: $baseline;

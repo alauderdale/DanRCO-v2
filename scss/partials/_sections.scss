@@ -12,16 +12,27 @@ section{
 
   }
   &.dan-hero{
-  	padding:$baseline*8 0;
-  	background-color: transparent;
-  	background-repeat:no-repeat;
-  	background-position-x:center;
-  	background-position-y:top;
-  	background-size:cover;
-    position:relative;
-    overflow:hidden;
-    background:$dark-gray-color;
+
+    position: relative;
+    overflow: hidden;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; 
+    background: no-repeat center center fixed; 
+    @include background-size(cover);
+    min-height:700px!important;
     width:100%;
+
+
+
+
+
     top:-95px;
     margin-bottom:-95px;
 	  @include breakpoint(md) {
@@ -63,6 +74,9 @@ section{
     @include breakpoint(sm) {
       background-position-x:-600px!important;
     }
+    @include breakpoint(xs) {
+      background-position-x:-900px!important;
+    }
 
   }
   &.ski{
@@ -79,18 +93,30 @@ section{
 
 
 .parallax-default {
-  position: relative;
-  overflow: hidden;
-  text-align: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; 
+  // position: relative;
+  // overflow: hidden;
+  // text-align: center;
+  // -webkit-box-align: center;
+  // -ms-flex-align: center;
+  // align-items: center;
+  // -webkit-box-pack: center;
+  // -ms-flex-pack: center;
+  // justify-content: center;
+  // display: -webkit-box;
+  // display: -ms-flexbox;
+  // display: flex; 
+  // background: no-repeat center center fixed; 
+  // -webkit-background-size: cover;
+  // -moz-background-size: cover;
+  // -o-background-size: cover;
+  // background-size: cover;
   min-height:600px!important;
+
+  @include breakpoint(md) {
+   
+  }
+  @include breakpoint(lg) {
+   
+  }
 }
 

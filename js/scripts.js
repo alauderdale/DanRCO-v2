@@ -9,7 +9,7 @@ $(document).ready(function(){
 
     $('.parallax-default').Parlx({
         height: '600px',
-        speed: '0.2',
+        speed: '0.1',
         mobile: false
     });
 

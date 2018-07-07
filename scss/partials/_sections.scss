@@ -82,9 +82,13 @@ section{
   &.ski{
     background-color:$dark-gray-color;
     @include breakpoint(sm) {
-      background-position-x:-900px!important;
+      background-position-x:-600px!important;
       background-position-y:bottom!important;
     }
+    @media (max-width: 600px) {
+      background-position-x:-900px!important;
+    }
+
   }
   &.contact{
      background-color: $dark-gray-color;
